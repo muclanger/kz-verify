@@ -38,7 +38,7 @@ Neither marking contains personal data. Social platforms usually remove the mani
 ## Check a file
 
 ```bash
-pip install kz-verify            # or: pip install .  (in this folder)
+pip install git+https://github.com/muclanger/kz-verify   # or: pip install .  (in a clone)
 kz-verify picture.png
 kz-verify voice.wav --json
 ```

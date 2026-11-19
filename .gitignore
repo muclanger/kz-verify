@@ -1,0 +1,19 @@
+# Dependencies / Build
+node_modules/
+dist/
+build/
+out/
+.next/
+__pycache__/
+.venv/
+venv/
+
+# Secrets (nie committen!)
+.env
+.env.*
+!.env.example
+
+# Logs / OS
+*.log
+.DS_Store
+Thumbs.db

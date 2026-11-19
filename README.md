@@ -43,6 +43,8 @@ kz-verify picture.png
 kz-verify voice.wav --json
 ```
 
+On Windows, set `PYTHONUTF8=1` before installing (PowerShell: `$env:PYTHONUTF8="1"`); TrustMark's setup otherwise fails to read its own README. A CPU-only PyTorch is enough (`--index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple`).
+
 For layer 2, [c2patool](https://github.com/contentauth/c2patool) must be on `PATH` (or pass `--c2patool PATH`). Without it, kz-verify checks the watermark only. MP3/M4A need `ffmpeg`. Model weights are downloaded once from Adobe (TrustMark) and Hugging Face (AudioSeal).
 
 Exit code `0` = AI marking found, `1` = none found.
